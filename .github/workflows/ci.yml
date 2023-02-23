@@ -7,11 +7,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Lighthouse
-        uses: stufreen/lighthouse-ci-action@e7f533b5d7a3a2556f08ced92fe9a66f860e7855
+        uses: stufreen/lighthouse-ci-action@279f2eed36def3d2c067c6faa9da0fb1c012ea95
         with:
           store: ${{ secrets.SHOP_STORE_OS2 }}
           password: ${{ secrets.SHOP_PASSWORD_OS2 }}
           access_token: ${{ secrets.SHOP_ACCESS_TOKEN }}
+          pull_theme: ${{ secrets.SHOP_PULL_THEME }}
           product_handle: the-organic-cotton-cutaway-tank
           collection_handle: all
           lhci_github_app_token: ${{ secrets.LHCI_GITHUB_TOKEN }}
