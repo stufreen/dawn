@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Lighthouse
-        uses: stufreen/lighthouse-ci-action@2adf8236bd3bcd8847f6e90e876f3827285c1f64
+        uses: shopify/lighthouse-ci-action@f63f6c39a4cb6fb40169194dcf51eac62354651c
         with:
           store: ${{ secrets.SHOP_STORE_OS2 }}
           password: ${{ secrets.SHOP_PASSWORD_OS2 }}
